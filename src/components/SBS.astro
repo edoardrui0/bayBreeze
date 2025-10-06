@@ -1,27 +1,33 @@
+---
+import { Image } from "astro:assets";
+
+import SBSImg from "../assets/images/handshake.jpeg";
+---
+
 <!-- Side By Side -->
 <section id="sbs-2291">
     <div class="cs-container">
         <!-- Left Content Section-->
         <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Creating Elegant Outdoor Living Spaces</h2>
+            <!-- <span class="cs-topper">Featured service</span> -->
+            <h2 class="cs-title">Websites Built to Perform</h2>
             <p class="cs-text">
-                Transform your outdoor spaces with our hardscaping services. We
-                design stunning patios, walkways, retaining walls, and outdoor
-                kitchens, combining creativity and expertise to enhance your
-                relaxation and entertainment areas.
+                Get your website done right with Bay Breeze Web Studios. We
+                design and develop modern, responsive websites that reflect your
+                brand and deliver real results. Whether you need a clean
+                business site, a full redesign, or a custom built project, we’ll
+                make sure your online presence works as hard as you do.
             </p>
             <div class="cs-features">
                 <h3 class="cs-h3">Key Features:</h3>
                 <ul class="cs-ul">
+                    <li class="cs-li">Optimized for speed, SEO, and mobile</li>
                     <li class="cs-li">
-                        Custom design tailored to your outdoor space
+                        Designs built specifically for your business goals
                     </li>
                     <li class="cs-li">
-                        Durable and aesthetically pleasing materials
-                    </li>
-                    <li class="cs-li">
-                        Seamless integration with your home's architecture
+                        Reliable delivery that gets your website live without
+                        delays
                     </li>
                 </ul>
             </div>
@@ -35,18 +41,26 @@
         <div class="cs-image-group">
             <!--Floating Box-->
             <div class="cs-box">
-                <span class="cs-number">12K+</span>
+                <!-- <span class="cs-number">12K+</span> -->
                 <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc"
-                        >Hardscaping projects that combine beauty and
-                        functionality.</span
-                    >
+                    <h3 class="cs-heading">We Get the Job Done</h3>
+                    <span class="cs-desc">
+                        From concept to launch, we focus on building websites
+                        that work.
+                    </span>
                 </div>
             </div>
             <!--Image-->
             <picture class="cs-picture">
-                <source
+                <Image
+                    src={SBSImg}
+                    alt=""
+                    format="webp"
+                    height={1250}
+                    width={1000}
+                    quality={"high"}
+                />
+                <!-- <source
                     media="(max-width: 600px)"
                     srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg"
                 />
@@ -62,7 +76,7 @@
                     width="630"
                     height="630"
                     aria-hidden="true"
-                />
+                /> -->
             </picture>
         </div>
     </div>
@@ -222,7 +236,7 @@
             box-sizing: border-box;
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
-            background-color: #fffcf3;
+            background-color: #81d9cf;
             display: inline-flex;
             flex-direction: column;
             justify-content: center;
@@ -249,12 +263,12 @@
             font-weight: 700;
             line-height: 1.2em;
             margin: 0 0 0.5rem;
-            color: var(--headerColor);
+            color: white;
         }
         #sbs-2291 .cs-desc {
             font-size: 1rem;
             line-height: 1.5em;
-            color: var(--bodyTextColor);
+            color: white;
         }
         #sbs-2291 .cs-graphic {
             width: 150%;

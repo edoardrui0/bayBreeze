@@ -1,3 +1,9 @@
+---
+import { Image } from "astro:assets";
+
+import HeroImg from "../assets/images/cityscape.jpeg";
+---
+
 <!-- Hero -->
 <section id="hero-143">
     <div class="cs-container">
@@ -14,7 +20,15 @@
 
     <!-- Background Image -->
     <picture class="cs-background">
-        <source
+        <Image
+            src={HeroImg}
+            alt=""
+            format="webp"
+            height={3000}
+            width={2000}
+            quality={"mid"}
+        />
+        <!-- <source
             media="(max-width: 600px)"
             srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg"
         />
@@ -30,7 +44,7 @@
             width="2250"
             height="1500"
             aria-hidden="true"
-        />
+        /> -->
     </picture>
 </section>
 
@@ -178,7 +192,7 @@
             width: 100%;
             height: 100%;
             background: #000;
-            opacity: 0.7;
+            opacity: 0.55;
             position: absolute;
             display: block;
             top: 0;
@@ -285,15 +299,11 @@
     /* Desktop - 1300px (To make image background parallax) */
     @media only screen and (min-width: 81.25rem) {
         #hero-143 {
-            background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             /* makes the parallax effect */
             background-attachment: fixed;
-        }
-        #hero-143 .cs-background img {
-            display: none;
         }
     }
     /* Dark Mode */
