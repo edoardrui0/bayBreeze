@@ -1,3 +1,9 @@
+---
+import { Image } from "astro:assets";
+
+import Planning from "../assets/images/planning.jpeg";
+---
+
 <!-- Content Page -->
 <section id="content-page-714">
     <div class="cs-container">
@@ -110,15 +116,12 @@
     </picture>
 </section>
 
-<!-- ============================================ -->
-<!--                    CTA                       -->
-<!-- ============================================ -->
-
+<!-- CTA -->
 <section id="cta-262">
     <div class="cs-container">
         <div class="cs-left-section">
             <h2 class="cs-title">Schedule Your Next Checkup With Us</h2>
-            <a href="" class="cs-button-solid">Request Appointment</a>
+            <a href="" class="cs-button-solid">Get Your Website Today</a>
         </div>
         <div class="cs-content">
             <span class="cs-header">Available Hours</span>
@@ -132,7 +135,15 @@
             </p>
         </div>
         <picture class="cs-background">
-            <source
+            <Image
+                src={Planning}
+                alt=""
+                format="webp"
+                height={3000}
+                width={2000}
+                quality={"mid"}
+            />
+            <!-- <source
                 media="(max-width: 600px)"
                 srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg"
             />
@@ -148,7 +159,7 @@
                 alt="appliance"
                 width="275"
                 height="132"
-            />
+            /> -->
         </picture>
     </div>
 </section>
