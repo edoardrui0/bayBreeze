@@ -3,6 +3,13 @@ import "../core-styles.css";
 
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+
+const { title = "", description = "Default description" } = Astro.props;
+// Use this in the opening <BaseLayout> tag to determine the browser title
+// <BaseLayout
+// 	title="Tampa Web Design | Bay Breeze Web Studio"
+// 	description="Custom-coded websites built for performance, clarity, and growth."
+// >
 ---
 
 <html lang="en">
@@ -11,7 +18,8 @@ import Footer from "../components/Footer.astro";
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Astro</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
     </head>
     <body>
         <Navbar />
