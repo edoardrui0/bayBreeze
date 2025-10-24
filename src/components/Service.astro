@@ -119,22 +119,23 @@ import Planning from "../assets/images/planning.jpeg";
 <!-- CTA -->
 <section id="cta-262">
     <div class="cs-container">
-        <div class="cs-left-section">
-            <h2 class="cs-title">Schedule Your Next Checkup With Us</h2>
-            <a href="" class="cs-button-solid">Get Your Website Today</a>
+        <!-- <div class="cs-left-section">
+            
+        </div> -->
+        <div class="cs-container2">
+            <h2 class="cs-title">
+                Ready to Build Something <span class="strong">Great</span> Together?
+            </h2>
+            <span class="cs-text"
+                >Your business deserves more than a template. Get a
+                custom-coded, SEO-optimized website built to perform. Click
+                below and let’s make it happen.</span
+            >
+            <a href="/contact" class="cs-button-solid">Get Your Website Today</a
+            >
         </div>
-        <div class="cs-content">
-            <span class="cs-header">Available Hours</span>
-            <p class="cs-p">
-                Tuesday, Thursday, Friday: 9am-6pm<br />
-                ​(closed for lunch 12pm-2pm)
-            </p>
-            <p class="cs-p">
-                Appointments Preferred, Walk-Ins Welcome.<br />
-                Saturdays by Appointment Only.
-            </p>
-        </div>
-        <picture class="cs-background">
+
+        <!-- <picture class="cs-background">
             <Image
                 src={Planning}
                 alt=""
@@ -143,24 +144,7 @@ import Planning from "../assets/images/planning.jpeg";
                 width={2000}
                 quality={"mid"}
             />
-            <!-- <source
-                media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg"
-            />
-            <img
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg"
-                alt="appliance"
-                width="275"
-                height="132"
-            /> -->
-        </picture>
+        </picture> -->
     </div>
 </section>
 
@@ -445,8 +429,8 @@ import Planning from "../assets/images/planning.jpeg";
     }
 
     /*-- -------------------------- -->
-<---            CTA             -->
-<--- -------------------------- -*/
+    <---            CTA             -->
+    <--- -------------------------- -*/
     /* Mobile - 360px */
     @media only screen and (min-width: 0rem) {
         #cta-262 {
@@ -471,6 +455,11 @@ import Planning from "../assets/images/planning.jpeg";
             z-index: 1;
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
+            background-color: #122b3b;
+        }
+        #cta-262 .cs-container2 {
+            display: flex;
+            flex-direction: column;
         }
         #cta-262 .cs-background {
             width: 100%;
@@ -521,6 +510,16 @@ import Planning from "../assets/images/planning.jpeg";
         #cta-262 .cs-title {
             color: var(--bodyTextColorWhite);
             margin-bottom: clamp(1.25rem, 4.2vw, 3rem);
+            text-align: center;
+            font-weight: 900;
+        }
+        #cta-262 .cs-text {
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+        #cta-262 .strong {
+            color: var(--primary);
         }
         #cta-262 .cs-button-solid {
             font-size: 1rem;
@@ -530,6 +529,7 @@ import Planning from "../assets/images/planning.jpeg";
             font-weight: 700;
             text-align: center;
             margin: auto;
+            margin-top: 20px;
             color: #fff;
             min-width: 9.375rem;
             padding: 0 1.5rem;
@@ -584,7 +584,7 @@ import Planning from "../assets/images/planning.jpeg";
     @media only screen and (min-width: 48rem) {
         #cta-262 .cs-container {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
         }
         #cta-262 .cs-content {
             align-items: flex-end;
