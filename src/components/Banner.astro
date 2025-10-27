@@ -15,26 +15,6 @@ const currentPath = Astro.url.pathname;
         <!-- <span class="cs-int-title">Interior Page</span> -->
     </div>
     <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg"
-        />
-        <!--Tablet and above Image-->
-        <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg"
-        />
-        <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg"
-            alt="yoga"
-            width="1280"
-            height="568"
-        />
-    </picture>
     <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
     <svg
         class="cs-wave"
@@ -67,6 +47,7 @@ const currentPath = Astro.url.pathname;
             overflow: hidden;
             position: relative;
             z-index: 1;
+            background: #38414d;
         }
         #banner-843 .cs-container {
             text-align: center;
