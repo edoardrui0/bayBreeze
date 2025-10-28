@@ -1,86 +1,35 @@
 ---
 import CTA from "../components/CTA.astro";
+import { Image } from "astro:assets";
+
+import HandshakeIMG from "../assets/images/business-deal-2.jpeg";
+import WebDevIMG from "../assets/images/web-dev-2.jpeg";
 ---
 
-<!-- Side by Side -->
-<section id="sbs-83">
+<!-- SBS -->
+<section id="sbs-97">
     <div class="cs-container">
-        <!-- Left Section -->
-        <div class="cs-image-group">
-            <picture class="cs-picture">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors-m.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
-                />
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/outdoors.jpg"
-                    alt="people outside"
-                    width="254"
-                    height="262"
-                />
-            </picture>
-            <picture class="cs-picture">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway-m.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/pathway.jpg"
-                />
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/[pathway].jpg"
-                    alt="people outside"
-                    width="254"
-                    height="262"
-                />
-            </picture>
-            <picture class="cs-picture">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting-m.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-                />
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/planting.jpg"
-                    alt="person gardening"
-                    width="254"
-                    height="262"
-                />
-            </picture>
-            <picture class="cs-picture">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment-m.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
-                />
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/urban-environment.jpg"
-                    alt="urban environment in green"
-                    width="254"
-                    height="262"
-                />
-            </picture>
-        </div>
-        <!-- Right Section -->
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source
+                media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical-m.jpg"
+            />
+            <source
+                media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical.jpg"
+            />
+            <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical.jpg"
+                alt="body builder"
+                width="500"
+                height="552"
+                aria-hidden="true"
+            />
+        </picture>
+        <!-- Right Content Section-->
         <div class="cs-content">
             <span class="cs-topper">About Us</span>
             <h2 class="cs-title">Where Problem Solving Meets Design</h2>
@@ -116,8 +65,9 @@ import CTA from "../components/CTA.astro";
     </div>
 </section>
 
-<!-- Side By Side Reverse  -->
-<section id="sbsr-413">
+<!-- SBS Reverse -->
+
+<section id="sbsr-2202">
     <div class="cs-container">
         <div class="cs-content">
             <h2 class="cs-title">Time for a Change</h2>
@@ -147,68 +97,31 @@ import CTA from "../components/CTA.astro";
                 I’m ready to partner with you next and build something fast, accessible,
                 and high-converting for your business.
             </p>
+
             <a href="/contact" class="cs-button-solid">Get Your Website Today</a
             >
         </div>
         <div class="cs-image-group">
-            <!--Top Left Image-->
+            <!--Main Image-->
             <picture class="cs-picture cs-picture1">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg"
-                />
-                <img
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg"
-                    alt="backyard"
-                    width="229"
-                    height="352"
+                <Image
+                    src={HandshakeIMG}
+                    alt=""
+                    format="webp"
+                    height={1250}
+                    width={1000}
+                    quality={"high"}
                 />
             </picture>
-            <!--Top Right Image-->
+            <!--Small Image-->
             <picture class="cs-picture cs-picture2">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg"
-                />
-                <img
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
-                    alt="backyard"
-                    width="390"
-                    height="352"
-                />
-            </picture>
-            <!--Bottom Image-->
-            <picture class="cs-picture cs-picture3">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
-                />
-                <img
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
-                    alt="backyard"
-                    width="649"
-                    height="227"
+                <Image
+                    src={WebDevIMG}
+                    alt=""
+                    format="webp"
+                    height={1250}
+                    width={1000}
+                    quality={"high"}
                 />
             </picture>
         </div>
@@ -217,17 +130,18 @@ import CTA from "../components/CTA.astro";
 
 <CTA />
 
+<!-- Second Style -->
 <style>
     /*-- -------------------------- -->
-    <---        Side By Side        -->
+    <---       Side By Side 1       -->
     <--- -------------------------- -*/
 
     /* Mobile - 360px */
     @media only screen and (min-width: 0rem) {
-        #sbs-83 {
+        #sbs-97 {
             padding: var(--sectionPadding);
         }
-        #sbs-83 .cs-container {
+        #sbs-97 .cs-container {
             width: 100%;
             /* changes to 1280px at tablet */
             max-width: 34.375rem;
@@ -235,189 +149,70 @@ import CTA from "../components/CTA.astro";
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* 48px - 64px */
+            /* 48px - 64px, changed clamp at tablet */
             gap: clamp(3rem, 6vw, 4rem);
         }
-        #sbs-83 .cs-content {
+        #sbs-97 .cs-content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
-            max-width: 32.625rem;
+            max-width: 33.875rem;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
         }
 
-        #sbs-83 .cs-title {
-            max-width: 20ch;
+        #sbs-97 .cs-title {
+            max-width: 17ch;
         }
-        #sbs-83 .cs-text {
+        #sbs-97 .cs-text {
             margin-bottom: 1rem;
         }
-        #sbs-83 .cs-text:last-of-type {
+        #sbs-97 .cs-text:last-of-type {
             margin-bottom: 2rem;
         }
-        #sbs-83 .cs-card-group {
-            width: 100%;
-            max-width: 25rem;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            column-gap: 0.75rem;
-        }
-        #sbs-83 .cs-item {
-            list-style: none;
-            width: 32%;
-            max-width: 9.375rem;
-            /* making flex so we can align a heading with 1 line to the bottom */
-            display: flex;
-            flex-direction: column;
-            align-self: stretch;
-            align-content: space-between;
-        }
-        #sbs-83 .cs-number {
-            /* 39px - 49px */
-            font-size: clamp(2.4375rem, 5vw, 3.0625rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            text-align: left;
-            color: var(--primary);
-            display: block;
-            /* 8px - 16px */
-            margin: 0 0 clamp(0.25rem, 0.5vw, 1rem);
-        }
-        #sbs-83 .cs-h3 {
+        #sbs-97 .cs-ul {
+            margin: 0 0 2rem 0;
             /* 16px - 20px */
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            line-height: 1.2em;
-            text-align: left;
-            /* auto margin top will push text to bottom if there's only one line */
-            margin: auto 0 0;
-            color: var(--headerColor);
+            padding-left: clamp(1rem, 2vw, 1.25rem);
         }
-        #sbs-83 .cs-image-group {
-            width: 100%;
-            max-width: 33.875rem;
-            /* pushes down by the same amount the images overlap the image group */
-            margin: 0 0 2.5rem;
-            display: flex;
-            /* separate children to opposite sides of the room */
-            justify-content: center;
-            align-content: space-between;
-            flex-wrap: wrap;
-            gap: clamp(0.5rem, 2vw, 1.25rem);
-        }
-        #sbs-83 .cs-picture {
-            width: 48%;
-            /* 218px - 264px */
-            min-height: clamp(13.625rem, 25vw, 16.5rem);
-            aspect-ratio: 0.73394495;
+        #sbs-97 .cs-li {
+            list-style: none;
+            /* 14px - 18px */
+            font-size: clamp(0.875rem, 1.3vw, 1.125rem);
+            line-height: 1.5em;
+            /* 8px - 12px */
+            margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+            color: var(--bodyTextColor);
             position: relative;
-            display: block;
-        }
-        #sbs-83 .cs-picture:nth-of-type(2) {
-            /* move slightly down */
-            transform: translateY(2.5rem);
-        }
-        #sbs-83 .cs-picture:nth-of-type(4) {
-            /* move slightly up */
-            transform: translateY(2.5rem);
-        }
-        #sbs-83 .cs-picture img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            /* Makes image act as a background image to the picture element */
-            object-fit: cover;
-        }
-    }
-    /* Tablet - 768px */
-    @media only screen and (min-width: 48rem) {
-        #sbs-83 .cs-container {
-            max-width: 80rem;
-            flex-direction: row;
+            display: flex;
             justify-content: flex-start;
             align-items: center;
-            /* 44px - 108px */
-            column-gap: clamp(2.75rem, calc(6.4vw), 6.75rem);
         }
-        #sbs-83 .cs-card-group {
-            max-width: 100%;
+        #sbs-97 .cs-li:last-of-type {
+            margin-bottom: 0;
         }
-        #sbs-83 .cs-image-group {
-            /* 318px - 542px */
-            width: clamp(19.875rem, 46.9vw, 33.875rem);
+        #sbs-97 .cs-number {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.6vw, 1rem);
+            /* 24px - 28px */
+            width: clamp(1.5rem, 2.9vw, 1.75rem);
+            height: clamp(1.5rem, 2.9vw, 1.75rem);
+            margin-right: 0.75rem;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* we set this element to align to the top of the li, so if there's 
+                multiple lines it will stay at the top instead of the center of the text */
+            align-self: flex-start;
             /* prevents flexbox from squishing it */
             flex: none;
         }
-        #sbs-83 .cs-picture {
-            width: 47.8%;
-            aspect-ratio: initial;
-        }
-    }
-    /* Dark Mode */
-    @media only screen and (min-width: 0rem) {
-        body.dark-mode #sbs-83 .cs-title,
-        body.dark-mode #sbs-83 .cs-text,
-        body.dark-mode #sbs-83 .cs-h3 {
-            color: var(--bodyTextColorWhite);
-        }
-        body.dark-mode #sbs-83 .cs-text {
-            opacity: 0.8;
-        }
-        body.dark-mode #sbs-83 .cs-h3 {
-            color: var(--bodyTextColorWhite);
-        }
-    }
-
-    /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
-<--- -------------------------- -*/
-
-    /* Mobile - 360px */
-    @media only screen and (min-width: 0rem) {
-        #sbsr-413 {
-            background-color: #f1f1f1;
-            padding: var(--sectionPadding);
-            /* clips svg as the screen grows so it doesn't overflow */
-            overflow: hidden;
-            position: relative;
-            z-index: 1;
-        }
-        #sbsr-413 .cs-container {
-            width: 100%;
-            /* changes to 1280 at tablet */
-            max-width: 34.375rem;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* 48px - 108px */
-            gap: clamp(3rem, 7.1vw, 6.75rem);
-        }
-        #sbsr-413 .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: left;
-            width: 100%;
-            max-width: 33.875rem;
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
-        }
-
-        #sbsr-413 .cs-text {
-            margin-bottom: 1rem;
-        }
-        #sbsr-413 .cs-text:last-of-type {
-            margin-bottom: 2rem;
-        }
-        #sbsr-413 .cs-button-solid {
+        #sbs-97 .cs-button-solid {
             font-size: 1rem;
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -436,7 +231,7 @@ import CTA from "../components/CTA.astro";
             /* prevents padding from adding to the width */
             box-sizing: border-box;
         }
-        #sbsr-413 .cs-button-solid:before {
+        #sbs-97 .cs-button-solid:before {
             content: "";
             position: absolute;
             height: 100%;
@@ -449,90 +244,262 @@ import CTA from "../components/CTA.astro";
             border-radius: 0.25rem;
             transition: width 0.3s;
         }
-        #sbsr-413 .cs-button-solid:hover:before {
+        #sbs-97 .cs-button-solid:hover:before {
             width: 100%;
         }
-        #sbsr-413 .cs-image-group {
-            font-size: min(2.5vw, 1em);
-            width: 36.1875em;
-            height: 33.875em;
-            /* sends it to the top of the flexbox */
-            order: -1;
+        #sbs-97 .cs-picture {
+            width: 100%;
+            margin: 0;
             position: relative;
-        }
-        #sbsr-413 .cs-picture {
-            border-radius: 1.25em;
-            /* clips the img tag corners */
-            overflow: hidden;
-            position: absolute;
             display: block;
+            /* width divided by height */
+            aspect-ratio: 0.78095238;
         }
-        #sbsr-413 .cs-picture:hover:before {
-            opacity: 0.6;
-        }
-        #sbsr-413 .cs-picture:hover img {
-            transform: scale(1.1);
-        }
-        #sbsr-413 .cs-picture:before {
-            /* Hover Box */
-            content: "";
-            width: 100%;
-            height: 100%;
-            background: var(--primary);
-            opacity: 0;
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            z-index: 10;
-            transition: opacity 0.3s;
-        }
-        #sbsr-413 .cs-picture img {
+        #sbs-97 .cs-picture img {
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
             width: 100%;
             object-fit: cover;
-            transition: transform 0.6s;
         }
-        #sbsr-413 .cs-picture1 {
-            width: 12.75em;
-            height: 19.625em;
+    }
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+        #sbs-97 .cs-container {
+            max-width: 80rem;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            /* 60px - 108px */
+            gap: clamp(3.75rem, 7.8vw, 6.75rem);
+        }
+        #sbs-97 .cs-picture {
+            /* 284px - 522px */
+            width: clamp(17.75rem, 39.3vw, 32.625rem);
+            /* 492px - 740px */
+            height: clamp(30.75rem, 60.9vw, 46.25rem);
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+    }
+    /* Dark Mode */
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #sbs-97 .cs-picture:before,
+        body.dark-mode #sbs-97 .cs-picture:after {
+            background: var(--accent);
+        }
+        body.dark-mode #sbs-97 .cs-topper {
+            color: var(--primaryLight);
+        }
+        body.dark-mode #sbs-97 .cs-text,
+        body.dark-mode #sbs-97 .cs-li,
+        body.dark-mode #sbs-97 .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbs-97 .cs-text {
+            opacity: 0.8;
+        }
+        body.dark-mode #sbs-97 .cs-number {
+            font-weight: bold;
+            color: #000;
+            background-color: var(--primaryLight);
+        }
+        body.dark-mode #sbs-97 .cs-button-solid {
+            background-color: var(--primaryLight);
+            color: #000;
+            transition: color 0.3s;
+        }
+        body.dark-mode #sbs-97 .cs-button-solid:hover {
+            color: #fafbfc;
+        }
+    }
+
+    /*-- -------------------------- -->
+<---   Side By Side Reverse 2   -->
+<--- -------------------------- -*/
+
+    /* Mobile - 360px */
+    @media only screen and (min-width: 0rem) {
+        #sbsr-2202 {
+            padding: var(--sectionPadding);
+            background-color: #f1f1f1;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        #sbsr-2202 .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: 44rem;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+        #sbsr-2202 .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            max-width: 36.625rem;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+        #sbsr-2202 .cs-title {
+            max-width: 30ch;
+        }
+        #sbsr-2202 .cs-text {
+            margin-bottom: 1.5rem;
+        }
+        #sbsr-2202 .cs-weekdays,
+        #sbsr-2202 .cs-weekends {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            color: var(--bodyTextColor);
+        }
+        #sbsr-2202 .cs-weekdays {
+            margin-bottom: 0.5rem;
+        }
+        #sbsr-2202 .cs-button-solid {
+            font-size: 1rem;
+            font-weight: 700;
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-align: center;
+            text-decoration: none;
+            min-width: 9.375rem;
+            margin: 2rem 0 0 0;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            padding: 0 1.5rem;
+            background-color: var(--primary);
+            color: #fff;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+        #sbsr-2202 .cs-button-solid:before {
+            content: "";
+            width: 0%;
+            height: 100%;
+            background: #000;
+            opacity: 1;
+            border-radius: 0.25rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: width 0.3s;
+        }
+        #sbsr-2202 .cs-button-solid:hover:before {
+            width: 100%;
+        }
+        #sbsr-2202 .cs-image-group {
+            /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+            font-size: min(2.3vw, 0.75rem);
+            /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+            width: 39.375em;
+            height: 39.1875em;
+            order: -1;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+        #sbsr-2202 .cs-picture {
+            overflow: hidden;
+            border: 8px solid #fff;
+            display: block;
+            position: absolute;
+        }
+        #sbsr-2202 .cs-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
             top: 0;
             left: 0;
         }
-        #sbsr-413 .cs-picture2 {
-            width: 21.75em;
-            height: 19.625em;
+        #sbsr-2202 .cs-picture1 {
+            width: 24em;
+            height: 29.375em;
             top: 0;
+            left: 0;
+        }
+        #sbsr-2202 .cs-picture2 {
+            width: 21.5625em;
+            height: 31.875em;
             right: 0;
-        }
-        #sbsr-413 .cs-picture3 {
-            width: 36.1875em;
-            height: 12.625em;
             bottom: 0;
-            left: 0;
+        }
+        #sbsr-2202 .cs-flower {
+            /* 137px - 309px */
+            width: clamp(8.5625rem, 20vw, 19.3125rem);
+            height: auto;
+            display: block;
+            position: absolute;
+            right: -2rem;
+            bottom: -0.5rem;
+        }
+    }
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+        #sbsr-2202 .cs-container {
+            max-width: 80rem;
+        }
+        #sbsr-2202 .cs-flower {
+            right: 0;
+            bottom: 0;
         }
     }
     /* Desktop - 1024px */
     @media only screen and (min-width: 64rem) {
-        #sbsr-413 .cs-container {
-            max-width: 80rem;
+        #sbsr-2202 .cs-container {
             flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
+            align-items: stretch;
         }
-        #sbsr-413 .cs-content {
-            width: 48%;
+        #sbsr-2202 .cs-content {
+            text-align: left;
+            padding: 3rem 0;
+            align-self: center;
+            align-items: flex-start;
         }
-        #sbsr-413 .cs-image-group {
-            font-size: min(1.15vw, 1em);
-            flex: none;
-            /* sends it to the right in the 2nd position */
+        #sbsr-2202 .cs-image-group {
+            font-size: min(1.3vw, 1rem);
+            height: auto;
+            min-height: 39.1875em;
             order: 2;
+        }
+        #sbsr-2202 .cs-picture1 {
+            height: 74.960128%;
+        }
+        #sbsr-2202 .cs-picture2 {
+            height: 81.339719%;
         }
     }
     /* Dark Mode */
-    @me;
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #sbsr-2202 {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        body.dark-mode #sbsr-2202 .cs-title,
+        body.dark-mode #sbsr-2202 .cs-text,
+        body.dark-mode #sbsr-2202 .cs-weekdays,
+        body.dark-mode #sbsr-2202 .cs-weekends {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbsr-2202 .cs-text {
+            opacity: 0.8;
+        }
+        body.dark-mode #sbsr-2202 .cs-picture {
+            border-color: var(--accent);
+        }
+    }
 </style>

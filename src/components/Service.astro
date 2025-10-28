@@ -1,5 +1,8 @@
 ---
+import { Image } from "astro:assets";
+
 import CTA from "../components/CTA.astro";
+import ServicesIMG from "../assets/images/services-img.jpeg";
 ---
 
 <!-- Content Page -->
@@ -66,65 +69,15 @@ import CTA from "../components/CTA.astro";
             </div>
             <div class="cs-image-group">
                 <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/derm-office.jpg"
-                    />
-                    <!--Tablet and above Image-->
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/derm-office.jpg"
-                    />
-                    <img
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/derm-office.jpg"
-                        alt="office"
-                        width="522"
-                        height="680"
+                    <Image
+                        src={ServicesIMG}
+                        alt=""
+                        format="webp"
+                        height={950}
+                        width={750}
+                        quality={"high"}
                     />
                 </picture>
-                <img
-                    class="cs-graphic cs-twirl"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/twirl.svg"
-                    alt="graphic"
-                    width="177"
-                    height="97"
-                    aria-hidden="true"
-                />
-                <img
-                    class="cs-graphic cs-peach"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-peach-blob.svg"
-                    alt="graphic"
-                    width="86"
-                    height="65"
-                    aria-hidden="true"
-                />
-                <img
-                    class="cs-graphic cs-blob"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-blob-2.svg"
-                    alt="graphic"
-                    width="528"
-                    height="468"
-                    aria-hidden="true"
-                />
-                <img
-                    class="cs-graphic cs-leaf"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derm-big-leaf.svg"
-                    alt="graphic"
-                    width="175"
-                    height="143"
-                    aria-hidden="true"
-                />
             </div>
         </div>
     </section>
@@ -283,7 +236,7 @@ import CTA from "../components/CTA.astro";
             box-sizing: border-box;
             background-color: #dab692;
             overflow: hidden;
-            border: 8px solid #dab692;
+            border: 8px solid #38414d;
             border-radius: 16.25rem;
             position: absolute;
             right: 0;
