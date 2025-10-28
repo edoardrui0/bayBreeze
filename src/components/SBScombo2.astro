@@ -1,4 +1,9 @@
-<!-- ============================================ --><!--                 Side By Side                 --><!-- ============================================ -->
+---
+import { Image } from "astro:assets";
+
+import WebDesignIMG from "../assets/images/web-design.jpeg";
+---
+
 <section id="sbs-2346">
     <div class="cs-container">
         <div class="cs-content">
@@ -17,23 +22,13 @@
             <a href="" class="cs-button-solid">Learn More</a>
         </div>
         <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source
-                media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building29.jpg"
-            />
-            <!--Tablet and above Image-->
-            <source
-                media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building29.jpg"
-            />
-            <img
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building29.jpg"
-                alt="building"
-                width="1280"
-                height="568"
+            <Image
+                src={WebDesignIMG}
+                alt=""
+                format="webp"
+                height={1250}
+                width={1000}
+                quality={"high"}
             />
         </picture>
     </div>

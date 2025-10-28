@@ -1,4 +1,12 @@
-<!-- ============================================ --><!--                  Services                    --><!-- ============================================ -->
+---
+import { Image } from "astro:assets";
+
+import WebDevIMG from "../assets/images/web-dev.jpeg";
+import HandshakeIMG from "../assets/images/business-deal.jpeg";
+import SeoIMG from "../assets/images/seo.jpeg";
+---
+
+<!-- Services -->
 <section id="services-1626">
     <div class="cs-container">
         <div class="cs-content">
@@ -24,23 +32,13 @@
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"
-                        />
-                        <!--Tablet and above Image-->
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"
-                        />
-                        <img
-                            loading="lazy"
-                            decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/nuclear.jpg"
-                            alt="room"
-                            width="413"
-                            height="420"
+                        <Image
+                            src={WebDevIMG}
+                            alt=""
+                            format="webp"
+                            height={1250}
+                            width={1000}
+                            quality={"high"}
                         />
                     </picture>
                     <h3 class="cs-h3">Complimentary Redesign Every 3 Years</h3>
@@ -66,23 +64,13 @@
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/worker5.jpg"
-                        />
-                        <!--Tablet and above Image-->
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/worker5.jpg"
-                        />
-                        <img
-                            loading="lazy"
-                            decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/worker5.jpg"
-                            alt="room"
-                            width="413"
-                            height="420"
+                        <Image
+                            src={HandshakeIMG}
+                            alt=""
+                            format="webp"
+                            height={1250}
+                            width={1000}
+                            quality={"high"}
                         />
                     </picture>
                     <h3 class="cs-h3">Simple Monthly Plan, No Upfront Cost</h3>
@@ -108,23 +96,13 @@
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/containers.jpg"
-                        />
-                        <!--Tablet and above Image-->
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/containers.jpg"
-                        />
-                        <img
-                            loading="lazy"
-                            decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/containers.jpg"
-                            alt="room"
-                            width="413"
-                            height="420"
+                        <Image
+                            src={SeoIMG}
+                            alt=""
+                            format="webp"
+                            height={1250}
+                            width={1000}
+                            quality={"high"}
                         />
                     </picture>
                     <h3 class="cs-h3">SEO Focused Code That Wins</h3>
